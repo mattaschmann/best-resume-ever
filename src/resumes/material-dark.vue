@@ -7,7 +7,7 @@
     <div class="section-headline">
       {{ lang.headings.contact }}
     </div>
-    <div class="item">
+    <!-- <div class="item">
       <div class="icon">
         <i class="material-icons">account_circle</i>
       </div>
@@ -16,7 +16,7 @@
           <li> Born {{person.birth.year}} in {{person.birth.location}}</li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <div class="item">
       <div class="icon">
@@ -75,9 +75,9 @@
       </div>
     </a>
 
-    <div class="item last">
+    <div class="item">
       <div class="section-headline">
-        {{ lang.headings.skills }}
+        {{ lang.headings.recent_skills }}
       </div>
       <div class="skill" v-for="skill in person.skills" :key="skill.name">
         <div class="right">
@@ -90,12 +90,24 @@
         </div>
       </div>
     </div>
+
+    <div class="item last">
+      <div class="section-headline">
+        Other Skills Used
+      </div>
+      <p class="info">{{person.other_skills}}</p>
+    </div>
   </div>
 
   <div class="rightCol">
     <div class="title">
       <h2>{{person.name.first}} {{person.name.middle}} {{person.name.last}}</h2>
       <div>{{person.position}}</div>
+    </div>
+
+    <div class="section-headline">{{ lang.headings.about }}</div>
+    <div class="block">
+      <p class="info first">{{person.about}}</p>
     </div>
 
     <div class="section-headline">{{ lang.headings.experience }}</div>
@@ -196,8 +208,8 @@ a {
   font-size:10pt;
   opacity:0.8;
   margin-left:20px;
-  margin-top:40px;
-  margin-bottom:20px;
+  margin-top:20px;
+  margin-bottom:10px;
   color:#3f3d3c;
 }
 .c {
@@ -285,6 +297,10 @@ h4 {
       color:rgba(0,0,0,0.870588);
       margin-bottom:0;
       padding-top:20px;
+
+      &.first {
+        padding-top:0;
+      }
     }
     .icon {
       width:16%;
@@ -356,7 +372,7 @@ h4 {
     background-position:center;
     position:relative;
     width:100%;
-    height:277px;
+    height:250px;
   }
   .item {
     width:100%;
@@ -384,6 +400,9 @@ h4 {
         font-size:15px;
         font-weight:300;
       }
+    }
+    .info {
+      margin: 20px;
     }
     span {
       font-weight:300;
