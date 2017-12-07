@@ -7,16 +7,6 @@
     <div class="section-headline">
       {{ lang.headings.contact }}
     </div>
-    <!-- <div class="item">
-      <div class="icon">
-        <i class="material-icons">account_circle</i>
-      </div>
-      <div class="text">
-        <ul>
-          <li> Born {{person.birth.year}} in {{person.birth.location}}</li>
-        </ul>
-      </div>
-    </div> -->
 
     <div class="item">
       <div class="icon">
@@ -64,7 +54,7 @@
       </div>
     </a>
 
-    <a v-if="person.contact.website" :href="person.contact.website" target="_blank">
+    <!-- <a v-if="person.contact.website" :href="person.contact.website" target="_blank">
       <div class="item">
         <div class="icon">
           <i class="material-icons">language</i>
@@ -73,7 +63,7 @@
           <span>{{person.contact.website}}</span>
         </div>
       </div>
-    </a>
+    </a> -->
 
     <div class="item">
       <div class="section-headline">
@@ -105,20 +95,17 @@
       <div>{{person.position}}</div>
     </div>
 
-    <div class="section-headline">{{ lang.headings.about }}</div>
-    <div class="block">
-      <p class="info first">{{person.about}}</p>
-    </div>
-
     <div class="section-headline">{{ lang.headings.experience }}</div>
     <div class="block" v-for="experience in person.experience" :key="experience.company">
       <div class="block-helper"></div>
       <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
         <div class="subheadline">{{experience.timeperiod}}</div>
-        <p class="info">
-          {{experience.description}}
-        </p>
+        <p class="info">{{experience.description}}</p>
+        <ul>
+          <li v-for="item in experience.bullets" :key="item">{{item}}</li>
+        </ul>
     </div>
+
     <div class="section-headline">{{ lang.headings.education }}</div>
     <div class="block" v-for="education in person.education" :key="education.degree">
       <div class="block-helper"></div>
@@ -344,6 +331,13 @@ h4 {
         border-bottom-style:none;
         border-bottom-style:none;
       }
+    }
+    li {
+      list-style-type: disc;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      margin-left: 15px;
+      font-weight: 300;
     }
   }
 }

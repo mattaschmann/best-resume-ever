@@ -14,21 +14,32 @@ birth:
 
 experience:
 - company: Scout Monitoring
-  position: UI Developer
+  position: Frontend Developer
   timeperiod: 2016 - 2017
-  description: Implemented explorer app using React/Redux.  Managed public facing website using React on Rails.
-    Maintained and improved internal user experience, converting old table based layout to flex based and improving the
-    mobile experience.  Implemented notification widget to update status of website.  Design and implement new landing
-    page.  Research options for a sql-like query interface.  Help manage server infrastructure.
+  description: Main developer responsible for UI implementation and maintenance.
+  bullets:
+    - Designed and Implemented an explorer app using React/Redux.
+    - Managed the public facing website using React on Rails.
+    - Optimized the user experience, converting the old table based layout to flex based which improved the mobile
+      responsiveness.
+    - Implemented a notification widget to update the status of the website.
+    - Design and implement a new landing page.
+    - Research options for a sql-like query interface.
+    - Help manage server infrastructure using technologies like salt, cron, and capistrano.
 
 - company: Bulb Inc
   position: Full Stack Developer
   timeperiod: 2007 - 2016
-  description: Implemented fully restful website front end in AngularJs.  Implemented and maintained Spring/Java based
-    server architecture.  Responsible for creating an entire cloud server infrastructure including load-balanced and
-    auto-scaling Jetty wased web servers, MongoDB cluster, and an Elasticsearch cluster on AWS.  Worked on a full 
-    Spring MVC based stack that utilized Spring Roo, Java, and Jstl.  Created a full HTML5 compatible website as a
-    front-end to main website.  Managed internal and external Linux servers.  IT guru, expert for any IT related needs.
+  description:  Software Developer, SysAdmin, and IT Generalist.
+  bullets:
+    - Implemented a fully RESTful front end using AngularJs.
+    - Maintained a Spring/Java based server architecture.
+    - "Responsible for creating an entire cloud server infrastructure, including: load-balanced and auto-scaled Jetty
+      based web servers, a MongoDB cluster, and an Elasticsearch cluster on AWS."
+    - Worked on a full Spring MVC based stack that utilized Spring Roo, Java, and Jstl.
+    - Created an HTML5 compatible website as a landing page to the main website.
+    - Managed internal and external Linux servers.
+    - IT guru, expert for any IT/Networking related needs.
 
 education:
 - degree: Studied Computer Science/Computer Engineering
@@ -56,7 +67,7 @@ skills:
 knowledge: Skills that experience with either profesionally or personally
 
 other_skills: PHP, MongoDB, Node.js, Linux, AWS, jQuery, JSTL, Bash, Elasticsearch, Maven, Git, Mercurial, Spring MVC,
-              GruntJS, Bootstrap, Ruby on Rails, AngularJS
+              GruntJS, Bootstrap, Ruby on Rails, AngularJS, Capistrano, Salt, Webpack
 
 contact:
   email: matt.aschmann@gmail.com
