@@ -3,7 +3,7 @@ name:
   first: Matt
   middle:
   last: Aschmann
-about: I'm a versatile and resourceful software developer.  Having worked at startups for the last 9 years, I've 
+about: I'm a versatile and resourceful software developer.  Having worked at startups for the last 9 years, I've
        learned to wear many hats, filling roles from IT and SysAdmin to full stack developer and team manager. I feel
        passionate about all things tech and like creating things that people enjoy using.
 position: Lead Full Stack Developer
@@ -75,7 +75,7 @@ skills:
   level: 50
 knowledge: Skills that experience with either profesionally or personally
 
-other_skills: PostgreSQL, MongoDB, Linux, jQuery, Bash, Elasticsearch, Git, Github, Gitlab, Mercurial,
+other_skills: PostgreSQL, MongoDB, Kubernetes, Linux, jQuery, Bash, Elasticsearch, Git, Github, Gitlab, Mercurial,
               GruntJS, Bootstrap, Ruby on Rails, Webpack, Jest
 
 contact:
