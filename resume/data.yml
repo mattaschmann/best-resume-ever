@@ -6,13 +6,27 @@ name:
 about: I'm a versatile and resourceful software developer.  Having worked at startups for the last 9 years, I've 
        learned to wear many hats, filling roles from IT and SysAdmin to full stack developer and team manager. I feel
        passionate about all things tech and like creating things that people enjoy using.
-position: Full Stack Developer
+position: Lead Full Stack Developer
 
 birth:
   year: 1983
   location: San Diego
 
 experience:
+- company: Cherokee Nations Technologies, USGS (Contractor)
+  position: Technical Lead
+  timeperiod: 2018 - Present
+  description: "Software lead for web development"
+  bullets:
+    - Created a CMS using AngularJs
+    - Implemented a file management UI using ReactJs
+    - Setup Google authentication using  OAuth 2.0
+    - Used fully stateless JWT verification on the server side
+    - Built and maintained an ExpressJs based api
+    - Maintained a MongoDB database with built in search
+    - Designed new features with client, planning and delegating tasks to the team members via Jira
+    - Ran weekly demos of the product for the client
+
 - company: Scout Monitoring
   position: Frontend Developer
   timeperiod: 2016 - 2017
@@ -48,26 +62,26 @@ education:
 
 # skill level goes 0 to 100
 skills:
+- name: Javascript/NodeJs
+  level: 99
 - name: HTML5
   level: 99
 - name: Sass - Less - CSS3
   level: 99
-- name: JavaScript
-  level: 99
-- name: SQL
+- name: AngularJs
   level: 90
-- name: AWS Lambda
-  level: 70
-- name: Java
+- name: React
+  level: 80
+- name: AWS
   level: 75
-- name: React/Redux
-  level: 60
 - name: Python
+  level: 50
+- name: Java
   level: 50
 knowledge: Skills that experience with either profesionally or personally
 
-other_skills: PHP, MongoDB, Node.js, Linux, AWS, jQuery, JSTL, Bash, Elasticsearch, Maven, Git, Mercurial, Spring MVC,
-              GruntJS, Bootstrap, Ruby on Rails, AngularJS, Capistrano, Salt, Webpack
+other_skills: PostgreSQL, MongoDB, Linux, jQuery, Bash, Elasticsearch, Git, Mercurial,
+              GruntJS, Bootstrap, Ruby on Rails, Webpack
 
 contact:
   email: matt.aschmann@gmail.com
