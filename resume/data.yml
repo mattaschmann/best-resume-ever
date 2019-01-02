@@ -24,22 +24,20 @@ experience:
     - Used fully stateless JWT verification on the server side
     - Built and maintained an ExpressJs based api
     - Maintained a MongoDB database with built in search
+    - Ran fully tested CI/CD deployment via Gitlab/Docker/Kubernetes
     - Designed new features with client, planning and delegating tasks to the team members via Jira
-    - Ran weekly demos of the product for the client
+    - Ran weekly product demos for the client
 
 - company: Scout Monitoring
   position: Frontend Developer
   timeperiod: 2016 - 2017
   description: "Main developer responsible for UI implementation and maintenance:"
   bullets:
-    - Designed and Implemented an explorer app using React/Redux
+    - Designed and implemented an explorer app using React/Redux
     - Managed the public facing website using React on Rails
     - Optimized the user experience, converting the old table based layout to flex based, improving the mobile
       responsiveness
-    - Built a notification widget to update the status of the website
-    - Designed and implemented a new landing page
-    - Researched options for a sql-like query interface
-    - Helped manage the server infrastructure using technologies like Salt, cron, and Capistrano
+    - Designed and implemented new landing pages
 
 - company: Bulb Inc
   position: Full Stack Developer
@@ -47,13 +45,8 @@ experience:
   description:  "Software Developer, SysAdmin, and IT Generalist:"
   bullets:
     - Implemented a fully RESTful front end using AngularJs
-    - Maintained a Spring/Java based server architecture
-    - "Responsible for creating an entire cloud server infrastructure, including: load-balanced and auto-scaled Jetty
-      based web servers, a MongoDB cluster, and an Elasticsearch cluster on AWS"
     - Worked on a Spring MVC based stack that utilized Spring Roo, Java, and Jstl
     - Created an HTML5 compatible website as a landing page to the main website
-    - Managed internal and external Linux servers
-    - IT expert for any IT/Networking related needs
 
 education:
 - degree: Studied Computer Science/Computer Engineering
@@ -74,14 +67,16 @@ skills:
   level: 80
 - name: AWS
   level: 75
+- name: Docker
+  level: 60
 - name: Python
   level: 50
 - name: Java
   level: 50
 knowledge: Skills that experience with either profesionally or personally
 
-other_skills: PostgreSQL, MongoDB, Linux, jQuery, Bash, Elasticsearch, Git, Mercurial,
-              GruntJS, Bootstrap, Ruby on Rails, Webpack
+other_skills: PostgreSQL, MongoDB, Linux, jQuery, Bash, Elasticsearch, Git, Github, Gitlab, Mercurial,
+              GruntJS, Bootstrap, Ruby on Rails, Webpack, Jest
 
 contact:
   email: matt.aschmann@gmail.com
