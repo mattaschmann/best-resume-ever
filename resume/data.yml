@@ -13,11 +13,13 @@ birth:
   location: San Diego
 
 experience:
-- company: Cherokee Nations Technologies, USGS (Contractor)
-  position: Technical Lead
+- company: CNT, USGS (Contractor)
+  position: Software Architect
   timeperiod: 2018 - Present
-  description: "Software lead for web development"
+  description: "Archtect, Lead developer, AWS Guru"
   bullets:
+    - Created microservice pipeline to ingest client data into elasticsearch
+    - Migrated AWS infrastructure to code-as-infrastructure using AWS CDK
     - Created a CMS using AngularJs
     - Implemented a file management UI using ReactJs
     - Setup Google authentication using  OAuth 2.0
@@ -55,28 +57,27 @@ education:
 
 # skill level goes 0 to 100
 skills:
-- name: Javascript/NodeJs
+- name: AWS
+  level: 85
+- name: AWS CDK
+  level: 85
+- name: Javascript/NodeJs/Typescript
   level: 99
 - name: HTML5
-  level: 99
-- name: Sass - Less - CSS3
-  level: 99
-- name: AngularJs
   level: 90
+- name: Sass - Less - CSS3
+  level: 90
+- name: AngularJs
+  level: 70
 - name: React
-  level: 80
-- name: AWS
-  level: 75
-- name: Docker
-  level: 60
+  level: 70
 - name: Python
-  level: 50
-- name: Java
-  level: 50
+  level: 70
+- name: Rust
+  level: 35
 knowledge: Skills that experience with either profesionally or personally
 
-other_skills: PostgreSQL, MongoDB, Kubernetes, Linux, jQuery, Bash, Elasticsearch, Git, Github, Gitlab, Mercurial,
-              GruntJS, Bootstrap, Ruby on Rails, Webpack, Jest
+other_skills: Docker, Dockerswarm, Java, PostgreSQL, MongoDB, Kubernetes, Linux, jQuery, Bash, Elasticsearch, Git, Github, Gitlab, Mercurial, GruntJS, Bootstrap, Ruby on Rails, Webpack, Jest
 
 contact:
   email: matt.aschmann@gmail.com
