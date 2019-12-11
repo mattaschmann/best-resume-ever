@@ -9,7 +9,7 @@
                   <i class="fa fa-envelope" aria-hidden="true"></i> {{person.contact.email}}</a></span>
                 <span id="phone"><i class='fa fa-phone-square' aria-hidden="true"></i> {{person.contact.phone}}</span>
                 <span v-if="person.contact.website" id="website"><a :href='person.contact.website'><i class="fa fa-home" aria-hidden="true"></i> {{person.contact.website}}</a></span>
-                <span v-if="person.contact.github" id="github"><a :href='"https://github.com/" + person.contact.github'><i class="fa fa-github" aria-hidden="true"></i> {{person.contact.github}}</a></span>
+                <span v-if="person.contact.github" id="github"><a :href='contactLinks.github'><i class="fa fa-github" aria-hidden="true"></i> {{person.contact.github}}</a></span>
             </div>
         </div>
         <div id="header-right">
@@ -18,7 +18,7 @@
     </div>
     <div id="resume-body">
         <div id="experience-container">
-            <h2 id="experience-title">{{ lang.headings.experience }}</h2>
+            <h2 id="experience-title">{{ lang.experience }}</h2>
             <div class="spacer"></div>
             <div class="experience" v-for="experience in person.experience" :key="experience.company">
                 <h2 class="company">{{experience.company}}</h2>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div id="education-container">
-            <h2 id="education-title">{{ lang.headings.education }}</h2>
+            <h2 id="education-title">{{ lang.education }}</h2>
             <div class="spacer"></div>
             <div class="education" v-for="education in person.education" :key="education.degree">
                 <h2 class="education-description">{{education.description}}</h2>
@@ -42,7 +42,7 @@
             </div>
         </div>
         <div id="skills-container" v-if="person.skills != []">
-            <h2 id="skills-title">{{ lang.headings.skills }}</h2>
+            <h2 id="skills-title">{{ lang.skills }}</h2>
             <div class="spacer"></div>
             <p id="skill-description">{{person.knowledge}}</p>
             <ul id="skill-list">
@@ -56,7 +56,7 @@
     </div>
     <div id="resume-footer">
         <div v-if="person.about">
-            <h2>{{ lang.headings.about }}</h2>
+            <h2>{{ lang.about }}</h2>
             <p>{{person.about}}</p>
         </div>
     </div>
@@ -67,7 +67,8 @@
 import Vue from 'vue';
 import { getVueOptions } from './options';
 
-export default Vue.component('purple', getVueOptions(name));
+const name = 'purple';
+export default Vue.component(name, getVueOptions(name));
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

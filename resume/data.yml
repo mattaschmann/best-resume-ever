@@ -79,6 +79,21 @@ knowledge: Skills that experience with either profesionally or personally
 
 other_skills: Docker, Dockerswarm, Java, PostgreSQL, MongoDB, Kubernetes, Linux, jQuery, Bash, Elasticsearch, Git, Github, Gitlab, Mercurial, GruntJS, Bootstrap, Ruby on Rails, Webpack, Jest
 
+projects:
+- name: best-resume-ever
+  platform: Vue
+  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
+  url: https://github.com/salomonelli/best-resume-ever
+
+hobbies:
+- name: Video Games
+  iconClass: fa fa-gamepad
+  url: https://example.com
+
+- name: Drawing
+  iconClass: fa fa-pencil
+  url: https://example.com
+
 contact:
   email: matt.aschmann@gmail.com
   phone: 970 213 5017

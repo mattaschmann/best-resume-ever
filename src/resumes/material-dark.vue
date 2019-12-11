@@ -5,7 +5,7 @@
     <div class="heading" id="myselfpic">
     </div>
     <div class="section-headline">
-      {{ lang.headings.contact }}
+      {{ lang.contact }}
     </div>
 
     <div class="item">
@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <a :href="'tel:'+person.contact.phone">
+    <a :href="contactLinks.phone">
       <div class="item">
         <div class="icon">
           <i class="material-icons">phone</i>
@@ -31,7 +31,7 @@
       </div>
     </a>
 
-    <a :href="'mailto:'+person.contact.email">
+    <a :href="contactLinks.email">
       <div class="item">
         <div class="icon">
           <i class="material-icons">email</i>
@@ -42,7 +42,7 @@
       </div>
     </a>
 
-    <a v-if="person.contact.github" :href="'https://github.com/'+person.contact.github" target="_blank">
+    <a v-if="person.contact.github" :href="contactLinks.github" target="_blank">
       <div class="item">
         <div class="icon">
           <i class="fa fa-github"></i>
@@ -95,7 +95,7 @@
       <div>{{person.position}}</div>
     </div>
 
-    <div class="section-headline">{{ lang.headings.experience }}</div>
+    <div class="section-headline">{{ lang.experience }}</div>
     <div class="block" v-for="experience in person.experience" :key="experience.company">
       <div class="block-helper"></div>
       <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
@@ -126,7 +126,7 @@
 <script>
 import Vue from 'vue';
 import { getVueOptions } from './options';
-let name = 'material-dark';
+const name = 'material-dark';
 
 export default Vue.component(name, getVueOptions(name));
 </script>

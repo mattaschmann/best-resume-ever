@@ -16,7 +16,7 @@
   </div>
   <div class="resume-content">
     <div class="experience">
-      <h3>{{ lang.headings.experience }}</h3>
+      <h3>{{ lang.experience }}</h3>
 
       <div class="experience-block" v-for="experience in person.experience" :key="experience.company">
         <div class="row">
@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="education">
-      <h3>{{ lang.headings.education }}</h3>
+      <h3>{{ lang.education }}</h3>
       <div class="education-block" v-for="education in person.education" :key="education.degree">
         <div class="row">
           <span class="degree">{{education.degree}}</span>
@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="skill-section">
-      <h3>{{ lang.headings.skills }}</h3>
+      <h3>{{ lang.skills }}</h3>
       <div class="skills" v-for="skill in person.skills" :key="skill.name">
         <div class="skill-block">
           <i class="material-icons">details</i>
@@ -55,18 +55,18 @@
       <span>{{person.knowledge}} </span>
     </div>
     <div class="contact">
-      <h3>{{ lang.headings.contact }}</h3>
-      <a :href="'mailto:'+person.contact.email"> {{person.contact.email}}</a>
+      <h3>{{ lang.contact }}</h3>
+      <a :href="contactLinks.email"> {{person.contact.email}}</a>
       <span>;&nbsp;</span>
-      <a :href="'tel:'+person.contact.phone">{{person.contact.phone}}</a>
+      <a :href="contactLinks.phone">{{person.contact.phone}}</a>
       <span>;&nbsp;</span>
       <span>{{person.contact.street}}, {{person.contact.city}}</span>
       <span>;&nbsp;</span>
       <a v-if="person.contact.website" :href="person.contact.website">
               {{person.contact.website}}</a>
       <span v-if="person.contact.website">;&nbsp;</span>
-      <a v-if="person.contact.github" :href="'https://github.com/'+person.contact.github">
-                https://github.com/{{person.contact.github}}</a>
+      <a v-if="person.contact.github" :href="contactLinks.github">
+                {{contactLinks.github}}</a>
     </div>
   </div>
 </div>
@@ -76,7 +76,7 @@
 import Vue from 'vue';
 import { getVueOptions } from './options';
 
-let name = 'oblique';
+const name = 'oblique';
 export default Vue.component(name, getVueOptions(name));
 </script>
 
