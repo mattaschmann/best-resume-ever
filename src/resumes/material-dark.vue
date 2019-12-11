@@ -106,6 +106,7 @@
         </ul>
     </div>
 
+    <!--
     <div class="section-headline">{{ lang.headings.education }}</div>
     <div class="block" v-for="education in person.education" :key="education.degree">
       <div class="block-helper"></div>
@@ -114,6 +115,8 @@
         {{education.timeperiod}}, {{education.description}}
       </p>
     </div>
+    -->
+
   </div>
 
   <div style="clear:both;"></div>
