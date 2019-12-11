@@ -67,7 +67,7 @@
 
     <div class="item">
       <div class="section-headline">
-        {{ lang.headings.recent_skills }}
+        {{ lang.recent_skills }}
       </div>
       <div class="skill" v-for="skill in person.skills" :key="skill.name">
         <div class="right">
@@ -107,7 +107,7 @@
     </div>
 
     <!--
-    <div class="section-headline">{{ lang.headings.education }}</div>
+    <div class="section-headline">{{ lang.education }}</div>
     <div class="block" v-for="education in person.education" :key="education.degree">
       <div class="block-helper"></div>
       <div class="headline">{{education.degree}}</div>
