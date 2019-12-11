@@ -1,11 +1,8 @@
-/* eslint-disable */
-const ka = {
-  headings: {
+const lang = {
     contact: 'კონტაქტი',
     experience: 'გამოცდილება',
     education: 'განათლება',
     skills: 'უნარები',
     about: 'ჩემ შესახებ'
-  }
 };
-export default ka;
+export default lang;

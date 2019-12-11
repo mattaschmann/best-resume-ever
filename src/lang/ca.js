@@ -1,11 +1,11 @@
-/* eslint-disable */
-const ca = {
-  headings: {
+// Catalan
+const lang = {
     contact: 'Contacte',
     experience: 'Experiència',
     education: 'Educació',
     skills: 'Habilitats',
+    projects: 'Projectes',
+    contributions: 'Contribucions',
     about: 'Sobre mi'
-  }
 };
-export default ca;
+export default lang;

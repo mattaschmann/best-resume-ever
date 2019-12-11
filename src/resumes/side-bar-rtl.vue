@@ -15,9 +15,9 @@
               </div>
           </div>
           <div class="contact">
-              <h3>{{ lang.headings.contact }}</h3>
+              <h3>{{ lang.contact }}</h3>
               <div class="contact-row">
-                  <a :href="'mailto:'+person.contact.email">{{person.contact.email}}</a>
+                  <a :href="contactLinks.email">{{person.contact.email}}</a>
               </div>
               <div class="contact-row dots">
                   <i class="fa fa-circle" aria-hidden="true"></i>
@@ -25,7 +25,7 @@
                   <i class="fa fa-circle" aria-hidden="true"></i>
               </div>
               <div class="contact-row">
-                  <a href="'tel:'+person.contact.phone">{{person.contact.phone}}</a>
+                  <a href="contactLinks.phone">{{person.contact.phone}}</a>
               </div>
               <div class="contact-row dots">
                   <i class="fa fa-circle" aria-hidden="true"></i>
@@ -41,13 +41,13 @@
                   <i class="fa fa-circle" aria-hidden="true"></i>
               </div>
               <div class="contact-row">
-                  <a :href="'https://github.com/'+person.contact.github">https://github.com/{{person.contact.github}}</a>
+                  <a :href="contactLinks.github">{{contactLinks.github}}</a>
               </div>
           </div>
       </div>
       <div class="left-col">
           <div class="experience">
-              <h3>{{ lang.headings.experience }}</h3>
+              <h3>{{ lang.experience }}</h3>
                   <div class="experience-block" v-for="experience in person.experience">
                       <div class="row">
                           <span class="company"> {{experience.company}} -</span>
@@ -62,7 +62,7 @@
                   </div>
           </div>
           <div class="education">
-              <h3>{{ lang.headings.education }}</h3>
+              <h3>{{ lang.education }}</h3>
                   <div class="education-block" v-for="education in person.education">
                       <div class="row">
                           <span class="degree">{{education.degree}}</span>
@@ -73,7 +73,7 @@
                   </div>
           </div>
           <div class="skills-block">
-              <h3>{{ lang.headings.skills }}</h3>
+              <h3>{{ lang.skills }}</h3>
               <div class="skills">
                       <div class="skill" v-for="skill in person.skills">
                           <span class="skill-name">{{skill.name}}</span>
@@ -91,7 +91,7 @@
 import Vue from 'vue';
 import { getVueOptions } from './options';
 
-let name = 'side-bar-rtl';
+const name = 'side-bar-rtl';
 export default Vue.component(name, getVueOptions(name));
 </script>
 
