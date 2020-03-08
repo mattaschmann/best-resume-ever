@@ -16,8 +16,10 @@ experience:
 - company: CNT, USGS (Contractor)
   position: Software Architect
   timeperiod: 2018 - Present
-  description: "Archtect, Lead developer, AWS Guru"
+  description: "Architect, Lead developer, AWS Guru"
   bullets:
+    - Managed and updated a mapping application written in react
+    - Designed an implemented a react app that monitors a clients data sources
     - Created microservice pipeline to ingest client data into elasticsearch
     - Migrated AWS infrastructure to code-as-infrastructure using AWS CDK
     - Created a CMS using AngularJs
@@ -57,22 +59,22 @@ education:
 
 # skill level goes 0 to 100
 skills:
+- name: Javascript/NodeJs/Typescript
+  level: 95
 - name: AWS
   level: 85
 - name: AWS CDK
   level: 85
-- name: Javascript/NodeJs/Typescript
-  level: 99
 - name: HTML5
   level: 90
 - name: Sass - Less - CSS3
   level: 90
+- name: React
+  level: 85
 - name: AngularJs
   level: 70
-- name: React
-  level: 70
 - name: Python
-  level: 70
+  level: 65
 - name: Rust
   level: 35
 knowledge: Skills that experience with either profesionally or personally
